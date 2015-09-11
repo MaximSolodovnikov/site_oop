@@ -21,9 +21,15 @@ abstract class ACore {
 		
 	}
 	
+	protected function get_header() {
+		
+		include ("layout/header.php");
+		
+	}
+	
 	public function get_body() {
 		
-		echo "Hello, world";
+		$this->get_header();
 		
 	}
 	
