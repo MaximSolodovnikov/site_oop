@@ -6,10 +6,36 @@ div#header h1{height:80px;line-height:80px;margin:0;
   padding-left:10px;background: #EEE;color: #79B30B}
 div#content p{line-height:1.4}
 div#navigation{background:#B9CAFF}
-div#extra{background:#FF8539}
-div#footer{background: #333;color: #FFF}
+
+#menu
+{
+	background:yellow;
+	margin: 0 0 10px 0;
+	padding: 2px;
+	list-style-type: none;
+
+	background-color: #33ADFF;
+}
+
+#menu a
+{
+	color: #fff;
+	padding: 5px 10px;
+	text-decoration: none;
+	font-weight: bold;
+	display: inline-block;
+}
+
+#menu li { display: inline; }
+
+#menu a:hover {
+  background-color: #666;
+}
+
+div#footer{clear:both;background: #333;color: #FFF}
 div#footer p{margin:0;padding:5px 10px}
 
 div#wrapper{float:right;width:70%}
 div#navigation{float:left;width:29.9%}
-div#extra{clear:both;width:100%}
+
+div#menu{clear:both;width:100%}
