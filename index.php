@@ -1,4 +1,4 @@
-<?php header("Content-Type: text/html; Charset='utf-8'");
+<?php header("Content-Type:text/html;charset=UTF-8");
 
 require_once("config.php");
 require_once("classes/ACore.php");
@@ -25,12 +25,12 @@ if (file_exists("classes/" . $class . ".php")) {
 	}
 	else {
 		
-		exit("Íåò äàííûõ äëÿ âõîäà");
+		exit("ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ñ…Ð¾Ð´Ð°.");
 		
 	}
 }
 else {
 	
-	exit("Íå ïðàâèëüíûé àäðåñ.");
+	exit("ÐÐµÑ‚ Ñ‚Ð°ÐºÐ¾Ð¹ ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹.");
 	
 }
