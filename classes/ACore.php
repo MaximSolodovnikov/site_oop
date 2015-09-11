@@ -27,9 +27,37 @@ abstract class ACore {
 		
 	}
 	
+	protected function get_navigation() {
+		
+		$query = "SELECT id_category, name_category FROM categories";
+		$result = mysql_query($query);
+		
+		if (! $result) {
+			
+			exit("<br /> Ошибка выборки <br />" . mysql_error());
+			
+		}
+		$row = array();
+		
+		
+			echo "<div id='navigation'>";
+			
+				for($i = 0; $i < mysql_num_rows($result); $i++) {
+					
+					$row = mysql_fetch_array($result, MYSQL_ASSOC);
+					printf("<a href='?option=category&id=%s'>%s</a>", 
+							$row['id_category'], $row['name_category']);
+					
+				}
+				
+			echo "</div>";
+		
+	}
+	
 	public function get_body() {
 		
 		$this->get_header();
+		$this->get_navigation();
 		
 	}
 	
