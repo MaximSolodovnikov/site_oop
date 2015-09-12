@@ -54,10 +54,53 @@ abstract class ACore {
 		
 	}
 	
+	protected function get_menu() {
+	
+		$row = $this->menu_array();
+		
+		echo "<div id='menu'>
+				<ul>";
+				
+				foreach($row as $item) {
+				
+				printf("<a href='?option=menu?id_menu=%s'>%s</a>",
+						$item['id_menu'], $item['name_menu']);
+				
+				}
+
+		echo	"<ul>
+			</div>";
+	
+	}
+	
+	protected function menu_array() {
+	
+		$query = "SELECT id_menu, name_menu FROM menu";
+		$result = mysql_query($query);
+		if (! $result) {
+		
+			exit(mysql_error());
+		
+		}
+		
+		$row = array();
+		
+		for($i = 0; $i < mysql_num_rows($result); $i++) {
+		
+			$row[] = mysql_fetch_array($result, MYSQL_ASSOC);
+		
+		}
+		
+		return $row;
+	
+	}
+	
 	public function get_body() {
 		
 		$this->get_header();
+		$this->get_menu();
 		$this->get_navigation();
+		
 		
 	}
 	
