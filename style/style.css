@@ -4,8 +4,49 @@ p{margin:0 10px 10px}
 a{display:block;color: #981793;padding:10px}
 div#header h1{height:80px;line-height:80px;margin:0;
   padding-left:10px;background: #EEE;color: #79B30B}
-div#content p{line-height:1.4}
-div#navigation{background:#B9CAFF}
+
+#content 
+{
+	margin: 10px;
+	border-bottom: 2px solid grey;
+}
+
+#content h1
+{
+	margin-left: 10px;
+}
+
+#content img 
+{
+	margin-right: 10px;
+	width: 100px;
+	float: left;
+
+}
+
+#content a 
+{
+	color: red;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: right;
+}
+
+/*div#content img{width:29.9%}*/
+/*div#content p{width:70%}*/
+
+#content p{line-height:1.4; 	clear: both;}
+
+div#navigation{background:#B9CAFF; text-align: center}
+
+#navigation a{
+  text-decoration: none; font-weight: bold; color: black;
+}
+
+#navigation a:hover {
+  background-color: #666;
+  color: white;
+}
 
 #menu
 {
@@ -35,7 +76,7 @@ div#navigation{background:#B9CAFF}
 div#footer{clear:both;background: #333;color: #FFF}
 div#footer p{margin:0;padding:5px 10px}
 
-div#wrapper{float:right;width:70%}
-div#navigation{float:left;width:29.9%}
+div#wrapper{float:right;width:80%}
+div#navigation{float:left;width:19.9%}
 
 div#menu{clear:both;width:100%}

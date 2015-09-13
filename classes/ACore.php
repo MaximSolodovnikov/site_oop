@@ -108,7 +108,7 @@ abstract class ACore {
 		$this->get_header();
 		$this->get_menu();
 		$this->get_navigation();
-		/*$this->get_content();*/
+		$this->get_content();
 		$this->get_footer();
 		
 		
