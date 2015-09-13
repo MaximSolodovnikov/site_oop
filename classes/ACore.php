@@ -60,7 +60,7 @@ abstract class ACore {
 		
 		echo "<div id='menu'>
 				<ul>";
-				
+			echo "<a href='?option=main'>Главная</a>";
 				foreach($row as $item) {
 				
 				printf("<a href='?option=menu?id_menu=%s'>%s</a>",
