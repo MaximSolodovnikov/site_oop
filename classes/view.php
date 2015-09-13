@@ -19,7 +19,6 @@ class view extends ACore {
 				
 				if(! $result) {
 					exit("<br/>Ошибка выборки<br/>" . mysql_error());
-					
 				}
 
 					$row = mysql_fetch_array($result, MYSQL_ASSOC);
@@ -32,9 +31,6 @@ class view extends ACore {
 							$row['title_article'], $row['date'], $row['img_src'], $row['text_article']);
 				}
 				echo "</div>";
-			}
-			
-			
+			}			
 		}
-		
 	}

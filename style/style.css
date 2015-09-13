@@ -9,6 +9,7 @@ div#header h1{height:80px;line-height:80px;margin:0;
 {
 	margin: 10px;
 	border-bottom: 2px solid grey;
+	text-align: justify;
 }
 
 #content h1

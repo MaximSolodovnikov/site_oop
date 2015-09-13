@@ -21,7 +21,7 @@ class main extends ACore {
 				
 				printf("<div id='content'>
 							<h1>%s</h1>
-							<p>Дата статьи: %s</p><br />
+							<p>Дата публикации: %s</p><br />
 							<p><img src='%s' alt='' />%s</p>
 							<p><a href='?option=view&id_text=%s'>Читать далее...</a></p>
 						</div>",
