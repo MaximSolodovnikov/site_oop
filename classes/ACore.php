@@ -95,11 +95,21 @@ abstract class ACore {
 	
 	}
 	
+	abstract function get_content ();
+	
+	protected function get_footer() {
+	
+		include_once("layout/footer.php");
+	
+	}
+	
 	public function get_body() {
 		
 		$this->get_header();
 		$this->get_menu();
 		$this->get_navigation();
+		/*$this->get_content();*/
+		$this->get_footer();
 		
 		
 	}
