@@ -45,7 +45,7 @@ abstract class ACore {
 				for($i = 0; $i < mysql_num_rows($result); $i++) {
 					
 					$row = mysql_fetch_array($result, MYSQL_ASSOC);
-					printf("<a href='?option=category&id=%s'>%s</a>", 
+					printf("<a href='?option=category&id_cat=%s'>%s</a>", 
 							$row['id_category'], $row['name_category']);
 					
 				}
@@ -63,7 +63,7 @@ abstract class ACore {
 			echo "<a href='?option=main'>Главная</a>";
 				foreach($row as $item) {
 				
-				printf("<a href='?option=menu?id_menu=%s'>%s</a>",
+				printf("<a href='?option=menu&id_menu=%s'>%s</a>",
 						$item['id_menu'], $item['name_menu']);
 				
 				}
