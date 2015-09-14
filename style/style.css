@@ -81,3 +81,11 @@ div#wrapper{float:right;width:80%}
 div#navigation{float:left;width:19.9%}
 
 div#menu{clear:both;width:100%}
+
+/*-------------------ADMINKA-------------------------*/
+
+#admin_articles {
+	
+	margin-left: 50px;
+}
+
