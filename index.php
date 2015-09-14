@@ -2,6 +2,7 @@
 
 require_once("config.php");
 require_once("classes/ACore.php");
+require_once("classes/ACore_admin.php");
 
 if ($_GET['option']) {
 	
