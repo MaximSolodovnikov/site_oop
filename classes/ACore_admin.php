@@ -92,4 +92,19 @@ abstract class ACore_admin {
 		}
 		return $row;
 	}
+	
+	protected function get_data_art($id) {
+		
+		$query = "SELECT id_article, title_article, description_article, text_article, date FROM articles";
+		$result = mysql_query($query);
+		
+		if(! $result) {
+			
+			exit("Ошибка выборки" . mysql_error());
+			
+		}
+		$row = array();
+		$row = mysql_fetch_array($result, MYSQL_ASSOC);
+		return $row;
+	}
 }

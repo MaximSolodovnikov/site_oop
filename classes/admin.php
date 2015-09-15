@@ -22,8 +22,8 @@ class admin extends ACore_admin {
 			
 			
 			printf("<span id='admin_articles'>
-						Статья: <a href='?option=update_articles&id_text=%s'>%s</a>
-						<a href='?option=delete_articles&id_text=%s'>Удалить статью.</a><hr />
+						Статья: <a href='?option=update_article&id_text=%s'>%s</a>
+						<a href='?option=delete_article&id_text=%s'>Удалить статью.</a><hr />
 					</span>",
 				$row['id_article'], $row['title_article'], $row['id_article']);
 		}		
