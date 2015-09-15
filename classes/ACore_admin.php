@@ -31,7 +31,7 @@ abstract class ACore_admin {
 		
 		echo "<div id='navigation'>";
 			
-			echo "<a href='?option=edit_articles'>Статьи</a>";
+			echo "<a href='?option=admin'>Статьи</a>";
 			echo "<a href='?option=edit_menu'>Меню</a>";
 			echo "<a href='?option=edit_categories'>Категории</a>";
 				
@@ -56,6 +56,12 @@ abstract class ACore_admin {
 	}
 	
 	public function get_body() {
+		
+		if($_POST) {
+			
+			$this->obr(); // Обработчик формы
+			
+		}
 		
 		$this->get_header();
 		$this->get_menu();
