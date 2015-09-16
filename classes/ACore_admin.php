@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 abstract class ACore_admin {
 	
 	protected $db;
@@ -95,7 +95,7 @@ abstract class ACore_admin {
 	
 	protected function get_data_art($id) {
 		
-		$query = "SELECT id_article, title_article, description_article, text_article, date FROM articles";
+		$query = "SELECT id_article, title_article, description_article, text_article, date FROM articles WHERE id_article = '$id'";
 		$result = mysql_query($query);
 		
 		if(! $result) {

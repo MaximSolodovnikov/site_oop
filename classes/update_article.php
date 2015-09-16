@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 class update_article extends ACore_admin {
 	
 	protected function obr() {
@@ -68,7 +68,7 @@ print <<<HEREDOC
 <form enctype='multipart/form-data' action='' method='POST'>
 <p>Заголовок статьи<br />
 <input type='text' name='title' value='$data_art[title_article]' />
-<input type='hidden' name='id' value='$data_art[id_article]' />
+<input type='hidden' name='id' value='$data_art[id_text]' />
 </p>
 <p>Изображение<br />
 <input type='file' name='img_src' />
