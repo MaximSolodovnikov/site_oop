@@ -12,7 +12,8 @@ class update_article extends ACore_admin {
             }
             $img_src = $uploaddir . $_FILES['img_src']['name'];
         }
-
+        
+        $id = $_POST['id'];
         $title = $_POST['title'];
         $description = $_POST['description'];
         $text = $_POST['text'];
@@ -21,15 +22,16 @@ class update_article extends ACore_admin {
 
         if(! empty($title) || ! empty($description) || ! empty($text)){
 
-            $query = "INSERT INTO articles (title_article, img_src, description_article, text_article, date, cat)
-                      VALUES('$title','$img_src', '$description', '$text', '$date', '$cat')";
+            $query = "UPDATE articles
+                      SET title_article='$title', img_src='$img_src', description_article='$description', text_article='$text', date='$date', cat='$cat'
+                      WHERE id_article='$id'";
             
             if(! mysql_query($query)) {
                 exit("<br />Ошибка внесения в БД<br />" . mysql_error());
             }
             else {
                 $_SESSION['res'] = "Данные успешно внесены в БД";
-                header("Location:?option=add_article");
+                header("Location:?option=admin");
                 exit();
             }
         }

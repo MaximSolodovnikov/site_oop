@@ -13,6 +13,13 @@ class admin extends ACore_admin {
         }
         echo "<div id='wrapper_admin'>";
         echo "<h2><a href='?option=add_article'>Добавление статьи.<a/></h2><hr />";
+        
+        if($_SESSION['res']) {
+            echo $_SESSION['res'];
+            unset($_SESSION['res']);
+        }
+        
+        $cat = $this->get_categories();  
 
         $row = array();
         for($i = 0; $i < mysql_num_rows($result); $i++) {
