@@ -77,6 +77,6 @@ foreach($cat as $item) {
 	echo "<option value='" .$item['id_category'] . "'>" . $item['name_category'] . "</option>";
 	
 }
-	echo "</select><br /><br /><input type='submit' name='bottom' value='Сохранить' /></form></div>";
+	echo "</select><br /><br /><input type='submit' name='bottom' value='Сохранить' /><br /></form></div>";
 	}
 }

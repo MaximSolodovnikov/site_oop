@@ -11,8 +11,8 @@ class admin extends ACore_admin {
                 exit("<br />Ошибка выборки<br />" . mysql_error());
 
         }
-        echo "<div id='wrapper'>";
-        echo "<a href='?option=add_article'>Добавление статьи.<a/><hr />";
+        echo "<div id='wrapper_admin'>";
+        echo "<h2><a href='?option=add_article'>Добавление статьи.<a/></h2><hr />";
 
         $row = array();
         for($i = 0; $i < mysql_num_rows($result); $i++) {

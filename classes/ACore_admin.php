@@ -27,7 +27,7 @@ abstract class ACore_admin {
 		
 	}
 	
-	protected function get_navigation() {
+	/*protected function get_navigation() {
 		
 		echo "<div id='navigation'>";
 			
@@ -36,7 +36,7 @@ abstract class ACore_admin {
 			echo "<a href='?option=edit_categories'>Категории</a>";
 				
 		echo "</div>";
-	}
+	}*/
 	
 	protected function get_menu() {
 		
@@ -44,6 +44,10 @@ abstract class ACore_admin {
 				<ul>";
 			echo "<a href='?option=admin'>Админка</a>";
 			echo "<a href='?option=main'>Перейти на сайт</a>";
+                        
+                        echo "<a href='?option=admin'>Статьи</a>";
+			echo "<a href='?option=edit_menu'>Меню</a>";
+			echo "<a href='?option=edit_categories'>Категории</a>";
 				
 		echo	"<ul>
 			</div>";
@@ -65,7 +69,7 @@ abstract class ACore_admin {
 		
 		$this->get_header();
 		$this->get_menu();
-		$this->get_navigation();
+		/*$this->get_navigation();*/
 		$this->get_content();
 		$this->get_footer();
 		
