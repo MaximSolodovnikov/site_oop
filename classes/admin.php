@@ -3,7 +3,7 @@ class admin extends ACore_admin {
 	
     public function get_content() {
 
-        $query = "SELECT id_article, title_article FROM articles";
+        $query = "SELECT id_article, title_article, cat FROM articles";
         $result = mysql_query($query);
 
         if(! $result) {
@@ -12,7 +12,7 @@ class admin extends ACore_admin {
 
         }
         echo "<div id='wrapper_admin'>";
-        echo "<h2><a href='?option=add_article'>Добавление статьи.<a/></h2><hr />";
+        echo "<h2><a href='?option=add_article'>Добавление статьи<a/></h2><hr />";
         
         if($_SESSION['res']) {
             echo $_SESSION['res'];
@@ -22,19 +22,29 @@ class admin extends ACore_admin {
         $cat = $this->get_categories();  
 
         $row = array();
+        
+         
         for($i = 0; $i < mysql_num_rows($result); $i++) {
 
                 $row = mysql_fetch_array($result, MYSQL_ASSOC);?>
 
                     <h2>Статья: <?php echo $row['title_article'];?></h2>
+                    
+                    <p><?php foreach($cat as $item){
+                        if($row['cat'] == $item['id_category']){
+                            echo "категория: " . $item['name_category'];
+                        }
+                    }?></p>
+                                        
                     <a href='?option=update_article&id_text=<?php echo $row['id_article'];?>'>
-                        Редактировать статью.
+                        Редактировать статью
                     </a>
-                    <a href='?option=delete_article&id_text=<?php echo $row['id_article'];?>'>
-                        Удалить статью.
+                    <a href='?option=delete_article&del=<?php echo $row['id_article'];?>'>
+                        Удалить статью
                     </a>
                     <hr />
-        <?php }		
+        <?php } 
+       
         echo "</div>";
     }
 }

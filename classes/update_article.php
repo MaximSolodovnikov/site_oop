@@ -52,8 +52,8 @@ class update_article extends ACore_admin {
 		echo "<div id='wrapper'>";
 		
 		if($_SESSION['res']) {
-			echo $_SESSION['res'];
-			unset($_SESSION['res']);
+                    echo $_SESSION['res'];
+                    unset($_SESSION['res']);
 		}
 		$cat = $this->get_categories();  
  ?>
