@@ -50,8 +50,8 @@ class update_menu extends ACore_admin {
         </p>
         <p>Текст меню<br />
             <textarea name='text' rows='10' cols='50'><?php echo $menu['text_menu']; ?></textarea>
-        </p>
-        <input type='submit' name='bottom' value='Сохранить' />
+        </p><br />
+        <p><input type='submit' name='bottom' value='Сохранить' /></p>
     </form>
 <?php echo "</div>";
     }

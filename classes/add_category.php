@@ -43,8 +43,8 @@ print <<<HEREDOC
     <form action='' method='POST'>
         <p>Заголовок категории<br />
             <input type='text' name='title' />
-        </p>
-        <input type='submit' name='bottom' value='Сохранить' /><br />
+        </p><br />
+        <p><input type='submit' name='bottom' value='Сохранить' /></p>
     </form>
 </div>
 HEREDOC;

@@ -74,7 +74,7 @@ class update_article extends ACore_admin {
         <p>Дата<br />
         <input type='date' name='date' value='<?php echo $data_art['date']; ?>' />
         </p>
-        <select name='cat'>
+        <p><select name='cat'>
             <?php foreach($cat as $item) {
                 if($data_art['id_article'] == $item['id_category']) {
                     echo "<option selected value='" . $item['id_category']."' >" . $item['name_category']. "</option>";
@@ -83,8 +83,8 @@ class update_article extends ACore_admin {
                     echo "<option value='" .$item['id_category']."'>" . $item['name_category']. "</option>";
                 }
             }?>
-        </select><br /><br />
-        <input type='submit' name='bottom' value='Сохранить' />
+            </select></p><br />
+            <p><input type='submit' name='bottom' value='Сохранить' /></p>
     </form>
 <?php echo "</div>";
     }

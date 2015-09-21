@@ -69,7 +69,7 @@ print <<<HEREDOC
 <p>Дата<br />
 <input type='date' name='date' />
 </p>
-<select name='cat'>
+<p><select name='cat'>
 HEREDOC;
 
 foreach($cat as $item) {
@@ -77,6 +77,6 @@ foreach($cat as $item) {
 	echo "<option value='" .$item['id_category'] . "'>" . $item['name_category'] . "</option>";
 	
 }
-	echo "</select><br /><br /><input type='submit' name='bottom' value='Сохранить' /><br /></form></div>";
+	echo "</select></p><br /><p><input type='submit' name='bottom' value='Сохранить' /></p><br /></form></div>";
 	}
 }

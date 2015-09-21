@@ -95,7 +95,7 @@ abstract class ACore {
 
     public function get_body() {
 
-        if($_POST['admin']) {
+        if($_POST) {
             $this->obr(); // Обработчик формы логина
         }
         $this->get_header();

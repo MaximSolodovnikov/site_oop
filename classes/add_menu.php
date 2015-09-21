@@ -41,12 +41,12 @@ class add_menu extends ACore_admin {
 print <<<HEREDOC
     <form action='' method='POST'>
         <p>Заголовок пункта меню<br />
-        <input type='text' name='title' />
+            <input type='text' name='title' />
         </p>
         <p>Текст меню<br />
-        <textarea name='text' rows='10' cols='50'></textarea>
-        </p>
-        <input type='submit' name='bottom' value='Сохранить' /><br />
+            <textarea name='text' rows='10' cols='50'></textarea>
+        </p><br />
+        <p><input type='submit' name='bottom' value='Сохранить' /></p>
     </form>
 </div>
 HEREDOC;

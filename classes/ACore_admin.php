@@ -33,13 +33,9 @@ abstract class ACore_admin {
 		
         echo "<div id='menu'>
                 <ul>";
-                echo "<a href='?option=admin'>Админка</a>";
-                echo "<a href='?option=main'>Перейти на сайт</a>";
-                echo "<a href=''>Выход из АДМИНКИ</a>";
                 echo "<a href='?option=admin'>Статьи</a>";
                 echo "<a href='?option=edit_menu'>Меню</a>";
                 echo "<a href='?option=edit_categories'>Категории</a>";
-
         echo    "<ul>
             </div>";
 	

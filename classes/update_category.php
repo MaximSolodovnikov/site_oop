@@ -46,8 +46,8 @@ class update_category extends ACore_admin {
         <p>Название категории<br />
             <input type='text' name='title' value='<?php echo $category['name_category']; ?>' />
             <input type='hidden' name='id' value='<?php echo $category['id_category']; ?>' />
-        </p>
-        <input type='submit' name='bottom' value='Сохранить' />
+        </p><br />
+        <p><input type='submit' name='bottom' value='Сохранить' /></p>
     </form>
 <?php echo "</div>";
     }
