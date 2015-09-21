@@ -19,11 +19,11 @@ class add_article extends ACore_admin {
         $date = $_POST['date'];
         $cat = $_POST['cat'];
 
-        if(! empty($title) || ! empty($description) || ! empty($text)){
+        if( ! empty($title) || ! empty($description) || ! empty($text)){
 
-            $query = "INSERT INTO articles (title_article, img_src, description_article, text_article, date, cat)
+            $query = "INSERT INTO `articles` (`title_article`, `img_src`, `description_article`, `text_article`, `date`, `cat`)
                                       VALUES('$title','$img_src', '$description', '$text', '$date', '$cat')";
-                if(! mysql_query($query)) {
+                if( ! mysql_query($query)) {
 
                         exit("<br />Ошибка внесения в БД<br />" . mysql_error());
 

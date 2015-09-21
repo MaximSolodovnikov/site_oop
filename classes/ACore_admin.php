@@ -6,12 +6,12 @@ abstract class ACore_admin {
     public function __construct() {
 
         $this->db = mysql_connect(HOST, USER, PASS);
-        if (! $this->db) {
+        if ( ! $this->db) {
 
             exit("<br />Нет соединения с Базой данных. <br />" . mysql_error());
 
         }
-        if (! mysql_select_db(DB, $this->db)) {
+        if ( ! mysql_select_db(DB, $this->db)) {
 
                 exit("<br />Не существует такой Базы данных. <br />" . mysql_error());
 
@@ -28,7 +28,7 @@ abstract class ACore_admin {
     protected function get_menu() {
 		
         echo "<div id='menu'>
-                        <ul>";
+                <ul>";
                 echo "<a href='?option=admin'>Админка</a>";
                 echo "<a href='?option=main'>Перейти на сайт</a>";
 
@@ -36,7 +36,8 @@ abstract class ACore_admin {
                 echo "<a href='?option=edit_menu'>Меню</a>";
                 echo "<a href='?option=edit_categories'>Категории</a>";
 
-        echo "<ul></div>";
+        echo    "<ul>
+            </div>";
 	
 	}
 	
@@ -64,16 +65,17 @@ abstract class ACore_admin {
 	
     public function get_categories() {
 		
-        $query = "SELECT id_category, name_category FROM categories";
+        $query = "SELECT `id_category`, `name_category` FROM `categories`";
         $result = mysql_query($query);
 		
-            if(! $result) {
+            if( ! $result) {
 
                     exit("<br />Ошибка выборки<br />" . mysql_error());
 
             }
 		
         $row = array();
+        
         for($i = 0; $i < mysql_num_rows($result); $i++) {
 			
             $row[] = mysql_fetch_array($result, MYSQL_ASSOC);
@@ -84,16 +86,33 @@ abstract class ACore_admin {
 	
     protected function get_data_art($id) {
 		
-        $query = "SELECT id_article, title_article, description_article, text_article, date FROM articles WHERE id_article = '$id'";
+        $query = "SELECT `id_article`, `title_article`, `description_article`, `text_article`, `date` FROM `articles` WHERE `id_article` = '$id'";
         $result = mysql_query($query);
 
-        if(! $result) {
+        if( ! $result) {
 
                 exit("Ошибка выборки" . mysql_error());
 
         }
         $row = array();
         $row = mysql_fetch_array($result, MYSQL_ASSOC);
+        
+        return $row;
+    }
+    
+    protected function get_data_menu($id) {
+		
+        $query = "SELECT `id_menu`, `name_menu`, `text_menu` FROM `menu` WHERE `id_menu` = '$id'";
+        $result = mysql_query($query);
+
+        if( ! $result) {
+
+                exit("Ошибка выборки" . mysql_error());
+
+        }
+        $row = array();
+        $row = mysql_fetch_array($result, MYSQL_ASSOC);
+        
         return $row;
     }
 }

@@ -22,9 +22,9 @@ class update_article extends ACore_admin {
 
         if(! empty($title) || ! empty($description) || ! empty($text)){
 
-            $query = "UPDATE articles
-                      SET title_article='$title', img_src='$img_src', description_article='$description', text_article='$text', date='$date', cat='$cat'
-                      WHERE id_article='$id'";
+            $query = "UPDATE `articles`
+                      SET `title_article`='$title', `img_src`='$img_src', `description_article`='$description', `text_article`='$text', `date`='$date', `cat`='$cat'
+                      WHERE `id_article`='$id'";
             
             if(! mysql_query($query)) {
                 exit("<br />Ошибка внесения в БД<br />" . mysql_error());

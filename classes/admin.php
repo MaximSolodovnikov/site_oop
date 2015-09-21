@@ -3,10 +3,10 @@ class admin extends ACore_admin {
 	
     public function get_content() {
 
-        $query = "SELECT id_article, title_article, cat FROM articles";
+        $query = "SELECT `id_article`, `title_article`, `cat` FROM `articles`";
         $result = mysql_query($query);
 
-        if(! $result) {
+        if( ! $result) {
 
                 exit("<br />Ошибка выборки<br />" . mysql_error());
 
