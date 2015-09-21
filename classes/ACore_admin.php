@@ -4,6 +4,10 @@ abstract class ACore_admin {
     protected $db;
 	
     public function __construct() {
+        
+        if( ! $_SESSION['user']) {
+            header("Location:?option=login");
+        }
 
         $this->db = mysql_connect(HOST, USER, PASS);
         if ( ! $this->db) {
@@ -31,7 +35,7 @@ abstract class ACore_admin {
                 <ul>";
                 echo "<a href='?option=admin'>Админка</a>";
                 echo "<a href='?option=main'>Перейти на сайт</a>";
-
+                echo "<a href=''>Выход из АДМИНКИ</a>";
                 echo "<a href='?option=admin'>Статьи</a>";
                 echo "<a href='?option=edit_menu'>Меню</a>";
                 echo "<a href='?option=edit_categories'>Категории</a>";
@@ -131,5 +135,5 @@ abstract class ACore_admin {
         
         return $row;
     }
-    
+      
 }
