@@ -8,4 +8,4 @@
 	<body>
 		<div id="container">
 			
-			<div id="header"><h1>Header</h1></div>
+			<div id="header"><img src='img/457f6395f1101dc6a44399d89aeea111.png'/></div>

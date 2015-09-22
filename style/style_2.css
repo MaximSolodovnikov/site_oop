@@ -5,15 +5,14 @@ a{display:block;color: #981793;padding:10px}
 div#header h1{height:80px;line-height:80px;margin:0;
   padding-left:10px;background: #EEE;color: #79B30B}
   
-  #content 
+#content 
 {
-	margin: 10px;
-	/*border-bottom: 2px solid grey;*/
 	text-align: justify;
 	border: 1px solid #F4F7FC;
 }
 
-#content:hover {
+#content:hover 
+{
 	background-color: #F4F7FC;
 }
 
@@ -44,8 +43,6 @@ div#content{margin: 0 25%}
 /*--------------------------------------------*/
   #content_article 
 {
-	margin: 10px;
-	/*border-bottom: 2px solid grey;*/
 	text-align: justify;
 	border: 1px solid #F4F7FC;
 }
@@ -77,33 +74,30 @@ div#content_article p{line-height:1.4}
 
 /*---------------------------------------*/ 
 
-div#navigation{background:#B9CAFF;  width: 275px; float:left; margin-left:0;	padding: 0;}
+div#navigation{background:#B9CAFF;  /*width: 275px;*/width: 25%; float:left; margin-left:0;	padding: 0;}
 
 #navigation h2{
-  text-align: center;
-background-color: pink;
-margin-top: 0;
-padding: 10px;
+	text-align: center;
+	background-color: #FFD100;
+	margin-top: 0;
+	padding: 12px;
 }
 
 #navigation a{
-  text-decoration: none; font-weight: bold; color: black; text-align: center;
+	text-decoration: none; font-weight: bold; color: black; text-align: center;
 
 }
 
 #navigation a:hover {
-  background-color: #666;
-  color: white;
+	background-color: #666;
+	color: white;
 }
 
 #menu
 {
-	background:yellow;
-	margin: 0 0 10px 0;
 	padding: 2px;
 	list-style-type: none;
-
-	background-color: #33ADFF;
+	background-color: #0082D1;
 }
 
 #menu a
@@ -118,7 +112,7 @@ padding: 10px;
 #menu li { display: inline; }
 
 #menu a:hover {
-  background-color: #666;
+  color: #FFD100;
 }
 
 
