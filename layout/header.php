@@ -3,7 +3,7 @@
 	<head>
 		<title>Сайт на ООП</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-		<link type="text/css" rel="stylesheet" href="style/style.css" />
+		<link type="text/css" rel="stylesheet" href="style/style_2.css" />
 	</head>
 	<body>
 		<div id="container">

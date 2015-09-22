@@ -1,4 +1,4 @@
-			<div id="footer"><p>Here it goes the footer</p></div>
+			<div id="footer"><p>Разработан: Солодовниковым М.В.</p></div>
 		</div>
 	</body>
 </html>

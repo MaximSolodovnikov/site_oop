@@ -41,7 +41,7 @@ class category extends ACore {
 				}
 				else {
 				
-					echo "В данном разделе нет статей.";
+					echo "<div id='content'><h2>&nbsp;&nbsp;В данном разделе нет статей.</h2></div>";
 				
 				}
 			

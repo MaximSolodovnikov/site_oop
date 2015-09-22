@@ -41,7 +41,7 @@ abstract class ACore {
         $row = array();
 
             echo "<div id='navigation'>";
-
+			echo "<h2>Разделы</h2>";
                 for($i = 0; $i < mysql_num_rows($result); $i++) {
 
                     $row = mysql_fetch_array($result, MYSQL_ASSOC);

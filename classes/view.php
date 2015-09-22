@@ -23,7 +23,7 @@ class view extends ACore {
 
 					$row = mysql_fetch_array($result, MYSQL_ASSOC);
 
-					printf("<div id='content'>
+					printf("<div id='content_article'>
 								<h1>%s</h1>
 								<p>Дата публикации: %s</p><br />
 								<p><img src='%s' alt='' />%s</p>

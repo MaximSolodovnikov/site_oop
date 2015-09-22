@@ -1,0 +1,148 @@
+html,body{margin:0;padding:0}
+body{font: 76% arial,sans-serif}
+p{margin:0 10px 10px}
+a{display:block;color: #981793;padding:10px}
+div#header h1{height:80px;line-height:80px;margin:0;
+  padding-left:10px;background: #EEE;color: #79B30B}
+  
+  #content 
+{
+	margin: 10px;
+	/*border-bottom: 2px solid grey;*/
+	text-align: justify;
+	border: 1px solid #F4F7FC;
+}
+
+#content:hover {
+	background-color: #F4F7FC;
+}
+
+#content h1
+{
+	margin-left: 10px;
+}
+
+#content img 
+{
+	margin-right: 10px;
+	width: 100px;
+	float: left;
+
+}
+
+#content a 
+{
+	color: red;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: right;
+}
+
+div#content p{line-height:1.4}
+div#content{margin: 0 25%}
+
+/*--------------------------------------------*/
+  #content_article 
+{
+	margin: 10px;
+	/*border-bottom: 2px solid grey;*/
+	text-align: justify;
+	border: 1px solid #F4F7FC;
+}
+
+#content_article h1
+{
+	margin-left: 10px;
+}
+
+#content_article img 
+{
+	margin-right: 10px;
+
+	float: left;
+
+}
+
+
+#content_article a 
+{
+	color: red;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: right;
+}
+
+div#content_article{margin: 0 25%}
+div#content_article p{line-height:1.4}
+
+/*---------------------------------------*/ 
+
+div#navigation{background:#B9CAFF;  width: 275px; float:left; margin-left:0;	padding: 0;}
+
+#navigation h2{
+  text-align: center;
+background-color: pink;
+margin-top: 0;
+padding: 10px;
+}
+
+#navigation a{
+  text-decoration: none; font-weight: bold; color: black; text-align: center;
+
+}
+
+#navigation a:hover {
+  background-color: #666;
+  color: white;
+}
+
+#menu
+{
+	background:yellow;
+	margin: 0 0 10px 0;
+	padding: 2px;
+	list-style-type: none;
+
+	background-color: #33ADFF;
+}
+
+#menu a
+{
+	color: #fff;
+	padding: 5px 10px;
+	text-decoration: none;
+	font-weight: bold;
+	display: inline-block;
+}
+
+#menu li { display: inline; }
+
+#menu a:hover {
+  background-color: #666;
+}
+
+
+div#extra{background:#FF8539}
+div#footer{background: #333;color: #FFF}
+div#footer p{margin:0;padding:5px 10px}
+div#footer a{display:inline;padding:0;color: #C6D5FD}
+
+/*div#wrapper{float:left;width:100%}*/
+
+/*div#navigation{float:left;width:25%;margin-left:-25%}*/
+div#extra{float:left;width:25%;margin-left:-100%}
+div#footer{clear:left;width:100%}
+div#menu{clear:both;width:100%}
+
+/*-------------------ADMINKA-------------------------*/
+
+#admin_articles {
+	
+	margin-left: 50px;
+}
+
+#wrapper_admin {
+    float:right;
+    width:80%;
+    
+}
